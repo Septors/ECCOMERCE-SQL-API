@@ -33,6 +33,7 @@
 -DELETE /logout — вихід
 
 # Кошик:
+
 -GET /cart — отримати всі товари у кошику
 
 -POST /cart — додати товар до кошика
@@ -41,18 +42,20 @@
 
 -PATCH /cart — очистити кошик
 
-Товари
-GET /items — список товарів
+# Товари
 
-GET /items/:id — деталі товару
+-GET /items — список товарів
 
-POST /items — створення товару (роль ADMIN)
+-GET /items/:id — деталі товару
 
-PATCH /items/:id — оновлення товару (роль ADMIN)
+-POST /items — створення товару (роль ADMIN)
 
-DELETE /items/:id — видалення товару (роль ADMIN)
+-PATCH /items/:id — оновлення товару (роль ADMIN)
+
+-DELETE /items/:id — видалення товару (роль ADMIN)
 
 # Замовлення:
+
 -GET /orders — отримати замовлення користувача
 
 -POST /orders — створити замовлення
