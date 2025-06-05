@@ -83,6 +83,26 @@ Order     — замовлення (user + cart)
 
 -utils/ — допоміжні функції
 
+# Конфігурація:
+
+Для запуску проекту потрібно створити файл .env в корені проєкту з наступними змінними:
+
+DATABASE_URL=postgresql://user:password@host:port/dbname
+
+ACCESS_SECRET=ваш_секрет_для_access_токена
+
+REFRESH_SECRET=ваш_секрет_для_refresh_токена
+
+#  Ігноровані файли (.gitignore)
+
+У проекті є файл .gitignore з таким вмістом:
+
+node_modules
+
+.env
+
+/generated/prisma
+
 # Запуск:
 
 npm install
